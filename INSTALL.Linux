@@ -1,0 +1,45 @@
+
+			=== DOWNLOAD INSTRUCTIONS  ===
+
+Persuade your browser to download in BINARY mode!
+------------------------------------------
+
+- Select something like "save this target/link as ..." or shift+button1
+  in Netscape.
+- Use an alternate ftp oriented tool.
+
+Please, this problem is very annoying: don't tell me.
+
+Note for purists
+-----------------
+
+The X11.tgz file is really X11.tar.bz2 renamed X11.tgz. This 
+persuades any browser to force a binary download for this file.
+
+
+Images & Files
+--------------
+
+- Locate the 'current' directory on the web
+- Download mulinux-VERSION.tgz (floppy 1 + tools) 
+- [Optional] Download addons XYZ.tgz (SRV addon is recommended)
+- cd /some/dir ; cat mulinux-VERSION.tgz | gzip -dc | tar -xf-
+- copy addons XYZ.tgz in /some/dir
+
+ Download MODULES.tgz if you need other (eth, SCSI, ...)
+ modules (kernel 2.0.36)
+
+		 == Install from LINUX === 
+
+
+The best solution :) 
+Really, DOS installation is a disagreable incident.
+
+	- Login as root
+	- Do a "./mu -i" [ select x) for X11 addon, g) for GCC
+			and so on]
+
+
+Michele Andreoli
+m.andreoli@tin.it
+

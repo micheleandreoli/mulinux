@@ -1,0 +1,138 @@
+			===============================
+			== muLinux: install from DOS ==
+			===============================
+
+Download Notes:
+----------------
+
+Select "save target/link as..." or shift+button1 in Netscape OR
+Use an alternate ftp oriented tool.
+
+Your browser should download this in binary mode, however you may need to persuade your browser to download in binary.
+
+This problem is VERY annoying: please don't tell me.
+
+
+Requirements
+-----------------
+You will need:
+
+1) Some 1.44Mb diskettes, formatted OR unformatted, but without bad blocks.(1 for the installation disk, 1 for the boot disk and 1 for each addon you wish to configure)
+
+2) DOS, Win3.11, Win95, Win98,WinNT, Win* installed.
+
+
+Images & Files 
+-----------------
+
+0) Locate the 'current' directory on the web
+1) Download mulinux-VERSION.tgz (BOOT/ROOT/USR floppy + tools)
+2) Download DOSTOOLS.zip
+3) [Optional] Download addon floppies XYZ.tgz.
+
+
+UNPACKING THE archives
+-----------------------------
+
+1) Create a new directory and move DOSTOOLS.zip,
+mulinux-VERSION.tgz and the addons into it.
+All directories are OK (e.g. c:\mulinux, of c:\mu), with the only
+exclusion of c:\linux, because used by Linux itself.
+2) Unzip DOSTOOLS.zip using pkunzip or equivalent (Winzip).
+
+eg: 
+		c:\mulinux> pkunzip DOSTOOLS.zip
+
+3) Run unpack.bat
+
+		c:\mulinux> unpack 
+
+	
+  This will open the main archive mulinux-VERSION.tgz
+
+METHOD 1: using the Installer Disk (Suggested for WinNT)
+--------------------------------------------------------
+
+a) Run makefi.bat (formerly makefd.bat) in a DOS window:
+
+	c:\mulinux> makefi
+
+  This will create the "Installation Disk". It is formatted as
+  usual, i.e. 1440k.
+
+b) Put this disk in the drive and reboot 
+
+METHOD 2: PC without floppy drive
+---------------------------------- 
+
+a) Restart in "full DOS mode" and run boot.bat:
+		
+	c:\mulinux> boot 
+
+   Using this method, no InstallerDisk is needed.
+
+METHOD 3: lowmem machine, 386 with RAM < 4M (new!) 
+--------------------------------------------------
+
+Starting from muLinux 11r3, you can install with 4M also using
+methods 1 or 2. But if they doesn't works, try with that.
+
+
+a) Run the maker.bat (make root) script:
+
+	c:\mulinux> maker 
+
+   This will create the ROOT (1722k) disk, ext2fs mountable.
+   It works only if your floppy drive support 1722k super-formatting.
+
+b) Run the lowmem.bat script:
+
+	c:\mulinux> lowmem 
+
+This with start Linux and will not use ramdisks at all. This is the
+only script that not use additional RAM for the filesystem itself. 
+After booting, you will be asked to enter the ROOT floppy: 
+please, enter the floppy you made in a).
+
+NOTE 1: SCSI disks
+-------------------
+
+The installation Disk will also work with SCSI peripherals supported by AIC7xxx series cards, i.e. you can put DOSTOOLS.zip, mulinux.tgz and addons in SCSI partitions or a ZIP floppy with SCSI interface, and run 'makefd'.
+
+NOTE 2: SCSI disks
+-------------------
+
+If you wish only to make the standard single floppy Linux, i.e. the
+boot+root+usr traditional diskette, from DOS, please use
+the "makebru" (make boot,root,usr) script:
+
+		c:\> makebru
+
+It works only if your floppy drive support 1722k super-formatting.
+
+Anknowledgment
+--------------
+
+Both DOS command, fdformat.exe and rawrite2.exe, are patched versions,
+by Copyright 2000 Miguel Angel Alvarez <maacruz@navegalia.com>
+
+
+Warning
+----------
+
+The installation disk boots an instance of Linux which is used to create
+the various muLinux floppies.
+
+The system should automatically detect the location of the mulinux image files, (however you may be asked to enter the path yourself (eg. /mulinux/)) 
+and you will then be prompted to insert 3.5" high-density floppy disks
+to create the muLinux boot disk and each of the addon disks in turn.
+
+If you wish to create a permanent Hard-Drive installation, 
+boot muLinux and issue the command "clone" at the prompt.
+
+
+Michele Andreoli 
+m.andreoli@tin.it
+http://sunsite.auc.dk/mulinux
+
+-- End of README. You can safety stop reading here --
