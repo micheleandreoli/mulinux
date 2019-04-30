@@ -12,5 +12,5 @@ It is a miniature, but nearly full-featured distribution (i.e., version) of Linu
 - [muLinux running on the android tablet Samsung Tab S4](https://youtu.be/aqAjbU97La0) via Blochs simulator.
 - [muLinux on Blochs](https://youtu.be/1PDdkr9kT2k)
 - [muLinux on the Ipad ](https://youtu.be/z0De7r21pBU)
-- [muLinux booting from floppy-disk] (https://youtu.be/pSw6q-g_3Xs)
+- [muLinux booting from floppy-disk](https://youtu.be/pSw6q-g_3Xs)
 - [Wikipedia](https://en.wikipedia.org/wiki/MuLinux)
