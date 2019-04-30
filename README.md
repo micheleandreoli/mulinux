@@ -16,3 +16,9 @@ It is a miniature, but nearly full-featured distribution (i.e., version) of Linu
 - [muLinux on the Ipad ](https://youtu.be/z0De7r21pBU)
 - [muLinux booting from floppy-disk](https://youtu.be/pSw6q-g_3Xs)
 - [Wikipedia](https://en.wikipedia.org/wiki/MuLinux)
+
+## Screenshots
+
+![mu](http://micheleandreoli.org/public/Software/mulinux/mu/img/mu0.jpg) <br>
+![mu](http://micheleandreoli.org/public/Software/mulinux/mu/img/mu-vnc-1.gif) <br>
+![mu](http://micheleandreoli.org/public/Software/mulinux/mu/img/mu2.jpg) <br>
