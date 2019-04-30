@@ -1,5 +1,5 @@
 # muLinux
-muLinux was an Italian  lightweight floppy-based Linux distribution. Mu (&mu;) is the Greek letter that traditionally stands for "micro", which officially means one millionth, but in general means 
+muLinux was an Italian  lightweight floppy-based Linux distribution, developed between 1998 and 2004. Mu (&mu;) is the Greek letter that traditionally stands for "micro", which officially means one millionth, but in general means 
 "very small". 
 
 ![mu](http://micheleandreoli.org/public/Software/mulinux/mu/img/mulinux3.gif) <br>
